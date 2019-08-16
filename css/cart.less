@@ -1,0 +1,206 @@
+@fontColor:#969696;
+@jdc:#F23030;
+
+body{
+    background-color: #eee;
+}
+
+.layout{
+    position:relative;
+    width:100%;
+    min-width: 320px;
+    max-width:640px;
+    margin:0 auto;
+}
+/* 头部 */
+.cart-header{
+    position:static;
+    .c-text{
+        font-size:20px;
+        text-align:center;
+        line-height:44px;
+        h3{
+            font-weight:normal;
+        }
+    }
+}
+/* 安全中心 */
+.cart-safe{
+    width:100%;
+    height: 33px;
+    border-bottom:1px solid #ccc;
+    text-align:center;
+    p{  
+        position:relative;
+        display:inline-block;
+        font-size:14px;
+        color:#000;
+        line-height:33px;
+        padding-left:32px;
+        &::before{
+            position:absolute;
+            top: 7px;
+            left:7px;
+            content:"";
+            width: 18px;
+            height: 18px;
+            background:url("../images/safe_icon.png") no-repeat;
+            background-size: 18px;
+        }
+    }
+}
+/* 商品模块 */
+.cart-product{
+    width:100%;
+    margin-top:10px;
+    /* 头部 */
+    .c-header{
+        position: relative;
+        height: 34px;
+        border-top:1px solid #ccc;
+        border-bottom:1px solid #ccc;
+        padding-left:34px;
+        .chk-all{
+            position:absolute;
+            left:7px;
+            top:8px;
+            width:20px;
+            height: 20px;
+            background-position: -180px -90px;
+        }
+        .c-logo{
+            width: 20px;
+            height: 20px;
+            margin-top:10px;
+            margin-right:10px;
+        }
+        .title{
+            font-size:12px;
+            color:@fontColor;
+            line-height:33px;
+        }
+        .free{
+            font-size:12px;
+            color:@fontColor;
+            line-height: 33px;
+        }
+    }
+    /*内容*/
+    .c-content{
+        .c-item{
+            height: 100px;
+            border-bottom:1px solid #ccc;
+            position:relative;
+            padding-left:34px;
+            .chk-box{
+                position:absolute;
+                left:7px;
+                top:8px;
+                width:20px;
+                height: 20px;
+                background-position: -180px -90px;
+            }
+            .shop{
+                float:left;
+                width: 80px;
+                height: 80px;
+                margin-top:10px;
+            }
+            .item-box{
+                height: 100%;
+                overflow:hidden;
+                padding:10px;
+                p{
+                    width: 100%;
+                }
+            }
+            .c-option{
+                margin-top:20px;
+                .button{
+                    height: 32px;
+                    span{
+                        width: 40px;
+                        height: 32px;
+                        border:1px solid @fontColor;
+                        cursor:pointer;
+                        text-align:center;
+                        line-height: 32px;
+                        color:@fontColor;
+                    }
+                    span:nth-child(2){
+                        border-left:none;
+                        border-right:none;
+                    }
+                }
+                .delete{
+                    width: 18px;
+                    height: 22px;
+                    cursor:pointer;
+                    .delete-up{
+                        // margin-top:2px;
+                        display:block;
+                        width: 18px;
+                        height: 4px;
+                        background:url("../images/delete_up.png") no-repeat;
+                        background-size:18px 5px;
+                        transform-origin:right;
+                        transition:transform 1s;
+                    }
+                    
+                    .delete-down{
+                        margin-top:-2px;
+                        display:block;
+                        width: 18px;;
+                        height: 18px;
+                        background:url("../images/delete_down.png") no-repeat;
+                        background-size:18px 18px;
+                    }
+                }
+                .delete.open{
+                    .delete-up{
+                        transform:rotate(15deg);
+                    }
+                }
+            }
+        }
+    }
+}
+/* 模态框 */
+.cart-motai{
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    display:none;
+    .del-box{
+        width: 60%;
+        background-color: #fff;
+        margin:0 auto;
+        margin-top: 300px;
+        text-align:center;
+        padding:10px;
+        border-radius:10px;
+        p{
+            height:70px;
+            line-height: 70px;
+            border-bottom:1px solid @fontColor;
+            font-size:16px;
+        }
+        .del-btn{
+            margin-top: 10px;
+            a{
+                width: 40%;
+                height: 40px;
+                border:1px solid @fontColor;
+                line-height: 40px;
+                border-radius:5px;  
+            }
+            .comfirm{
+                background-color: @jdc;
+                color: #fff;
+            }
+        }
+    }
+}

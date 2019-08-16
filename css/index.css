@@ -1,0 +1,218 @@
+.jd-box {
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+/* 头部 */
+.jd-header {
+  position: fixed;
+  min-width: 320px;
+  max-width: 640px;
+  width: 100%;
+  height: 40px;
+  padding-left: 70px;
+  padding-right: 50px;
+  z-index: 999;
+}
+.jd-header .logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 60px;
+  height: 25px;
+  line-height: 40px;
+  background-position: 0px -107px;
+}
+.jd-header .search {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  padding: 5px 0;
+}
+.jd-header .search i {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  left: 10px;
+  background-position: -58px -109px;
+}
+.jd-header .search input {
+  width: 100%;
+  height: 30px;
+  border-radius: 30px;
+  font-size: 12px;
+  padding-left: 40px;
+}
+.jd-header .login {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #fff;
+}
+/* 轮播图 */
+.jd-banner {
+  position: relative;
+  overflow: hidden;
+}
+.jd-banner ul {
+  width: 1000%;
+  transform: translateX(-10%);
+}
+.jd-banner ul li {
+  float: left;
+  width: 10%;
+}
+.jd-banner ul li img {
+  width: 100%;
+  display: block;
+}
+.jd-banner ol {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 10px;
+}
+.jd-banner ol li {
+  float: left;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+  border: 1px solid #fff;
+}
+.jd-banner ol li.current {
+  background-color: #fff;
+}
+/* 导航栏 */
+.jd-nav {
+  padding: 10px 0;
+  text-align: center;
+}
+.jd-nav li {
+  float: left;
+  width: 20%;
+}
+.jd-nav li a img {
+  width: 40px;
+  height: 40px;
+}
+.jd-nav li a p {
+  font-size: 12px;
+  color: #969696;
+}
+/* 新闻模块 */
+.jd-news {
+  width: 98%;
+  height: 30px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0 1%;
+}
+.jd-news img {
+  position: absolute;
+  width: 73px;
+  height: 16px;
+  top: 7px;
+  left: 10px;
+}
+.jd-news ul {
+  width: 100%;
+  position: absolute;
+  left: 100px;
+}
+.jd-news ul li {
+  line-height: 30px;
+  color: #969696;
+}
+.jd-news a {
+  position: absolute;
+  right: 3px;
+  font-size: 12px;
+  color: #969696;
+  line-height: 30px;
+}
+/* 秒杀模块 */
+.seckill {
+  /*秒杀头部*/
+  /*秒杀主体*/
+}
+.seckill .title {
+  height: 30px;
+}
+.seckill .title .logo {
+  width: 20px;
+  height: 22px;
+  background-position: -82px -110px;
+  margin-top: 4px;
+}
+.seckill .title .text {
+  font-size: 12px;
+  color: #f23030;
+  margin: 0 10px;
+  line-height: 30px;
+}
+.seckill .title .time span:nth-child(2n+1) {
+  font-size: 12px;
+  color: #fff;
+  border-radius: 4px;
+  padding: 2px 2px;
+  background-color: #000;
+  line-height: 30px;
+}
+.seckill .title .more {
+  line-height: 30px;
+  color: #969696;
+}
+.seckill .content {
+  overflow: scroll;
+}
+.seckill .content ul {
+  width: 900px;
+  text-align: center;
+}
+.seckill .content ul li {
+  float: left;
+  width: 90px;
+  height: 101px;
+  border-right: 1px solid #ccc;
+}
+.seckill .content ul li a img {
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+}
+.seckill .content ul li a p:nth-of-type(1) {
+  color: #f23030;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.seckill .content ul li a p:nth-of-type(2) {
+  color: #969696;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+/* 主会场模块 */
+.major a {
+  float: left;
+  width: 33.3%;
+}
+.major a img {
+  display: block;
+  width: 100%;
+}
+/* 商品模块 */
+.commodity ul li a {
+  float: left;
+  width: 50%;
+}
+.commodity ul li a img {
+  display: block;
+  width: 100%;
+}
+.commodity ul li:first-child a {
+  width: 33.33%;
+}

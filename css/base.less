@@ -1,0 +1,84 @@
+/* css基础样式 */
+/* css样式重置 */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article,aside,details,figcaption,figure,footer,header,menu,nav,section,video{
+    margin:0;
+    padding: 0;
+    /* 所有盒子采用自动内减 */
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    /* 在移动端去除默认点击高亮效果 */
+    -webkit-tap-highlight-color:transparent;
+}
+body{
+    font:14px "Microsoft Yahei",Arial,sas-serif;
+    color:#333;
+}
+ul,
+ol{
+    list-style:none;
+}
+a,
+a:hover,
+a:active,
+a:visited,
+a:link{
+    text-decoration:none;
+    color:#333;
+}
+input{
+    border:none;
+    outline:none;/*去除默认高亮*/
+}
+/* 废物利用 */
+em,
+i{
+    font-style:none;
+}
+/* 清除浮动 */
+.clearfix::after{
+    content:".";
+    clear:both;
+    visibility:hidden;
+    height:0;
+    display:block;
+}
+.clearfix{
+    zoom:1;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.jd-sprites{
+    background:url("../images/jd-sprites.png") no-repeat;
+    background-size:200px 200px;
+}
+
+.header{
+    position:absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height: 44px;
+    background-image:linear-gradient(to bottom,#eee,#bbb);
+    .c-back{
+        float:left;
+        width:44px;
+        height: 100%;
+        background-position: -22px 0;
+        background-origin:content-box;
+        background-clip: content-box;
+        padding:12px;
+    }
+    .c-seek{
+        float:right;
+        width: 44px;
+        height: 100%;
+        background-position:-60px 0;
+        background-origin:content-box;
+        background-clip:content-box;
+        padding:12px;
+    }
+}
